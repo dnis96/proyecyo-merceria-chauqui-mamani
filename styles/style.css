@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(../img/textura-tela-blanca-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    /*background-image: radial-gradient(circle at 70.73% 50%, #ffb9b2 0, #ffb0b4 8.33%, #ffa7b7 16.67%, #ff9eba 25%, #ff94bd 33.33%, #ff89c1 41.67%, #f57fc5 50%, #e776ca 58.33%, #d670d0 66.67%, #c36cd7 75%, #ad6bdd 83.33%, #936ce4 91.67%, #736dea 100%);*/
+}
+.logoM{
+
+    width: 40px;
+    height: 50px;
+}
+
+.contenedorI{
+    height: 450px;
+    width: 100%;
+}
+
+.contenedorI img{
+    height: 100%;
+    width: 100%;
+}
+
+aside .navbar .container-fluid, aside
+.navbar-expand-md .navbar-collapse, aside
+.navbar-expand-md .navbar-nav{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+aside, aside nav{
+    background: none;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-nav, .navbar-collapse{
+    width: 100%;
+     
+}
+
+
+.divaside{
+    background: none;
+}
+
+aside .nav-item{
+    border-radius: 50px;
+    border: solid 2px;
+    width: 100%;
+    box-shadow: rgb(255, 148, 148) 5px 5px 20px;
+    background: rgb(115, 115, 115);
+    color: wheat;
+}
+
+aside .nav-item a{
+    color: white;
+}
+
+.row{
+    border-top: solid 30px;
+}
+
+main{
+    text-align: center;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.main_p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carta{
+    height: 280px;
+    width: 180px;
+    text-align: center;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    backface-visibility: hidden;
+    -webkit-perspective: 700;
+}
+
+
+.card_sup{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    box-shadow: rgb(253, 253, 253) 5px 5px 20px;
+    border-radius: 5px;
+    border: solid wheat;
+}
+
+.imagen_prod{
+    width: 150px;
+    border-radius: 5px;
+}
+
+
+.card_sup:hover{
+    transform: rotateY(180deg);
+}
+
+.card_sup p{
+    font-size: 15px;
+}
+.lado{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.frente{
+    background-image: radial-gradient(circle at 43.25% 48.19%, #eaffff 0, #e3faf8 16.67%, #d8e5e3 33.33%, #c9c9c9 50%, #b9aeb2 66.67%, #ab9ba2 83.33%, #a18e99 100%);
+}
+
+.atras{
+    --opacidad-negro: 0.3;
+    background-image:linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(../img/imagen-tela-colores.jpg);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+
+}
+
+.atras span{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*
+.atras ul{
+    text-align: center;
+    margin: auto;
+    margin-left: 10px;
+}
+.atras ul li{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    
+}*/
+
+.card_inf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-image: radial-gradient(circle at 50% -20.71%, #eaffff 0, #e3faf8 16.67%, #d8e5e3 33.33%, #c9c9c9 50%, #b9aeb2 66.67%, #ab9ba2 83.33%, #a18e99 100%);
+    border-radius:49% 51% 100% 0% / 100% 100% 0% 0% ;
+    height: 50px;
+    box-shadow: rgb(29, 28, 28) 5px 5px 20px;
+    
+}
+
+button{
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+button span{
+    font-size: 20px;
+}
+/*
+.card{
+    
+    height: 250px;
+    width: 150px;
+    background: none;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-perspective: 700;
+    border: none;
+    transform-style: preserve-3d;
+}
+
+.main_p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imagen_prod{
+    width: 100px;
+}
+
+.card_sup{
+    height: 1000px;
+    width: 100%;
+    position: relative;
+    box-shadow: rgb(29, 28, 28) 5px 5px 20px;
+}
+
+.card_sup:hover{
+    transform: rotateY(180deg);
+    
+}
+.card_sup p{
+    font-size: 13px;
+}
+
+.card_sup .lado{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card_sup_f {
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    background: rebeccapurple;
+    text-align: center;
+    
+    border-radius: 5px;
+    border: solid 2px;
+    background-image: radial-gradient(circle at 49.75% 49.57%, #faffff 0, #f9ffff 10%, #f8ffff 20%, #f6f7f6 30%, #f3ecef 40%, #eee1e8 50%, #e8d6e3 60%, #e1cddf 70%, #d9c4dd 80%, #d0bedc 90%, #c6b8db 100%);
+
+}
+
+.card_sup_d {
+    height: 100%;
+    width: 100%;
+    background: rebeccapurple;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.card_inf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background: rebeccapurple;
+    border-radius:49% 51% 100% 0% / 100% 100% 0% 0% ;
+    height: 100%;
+    box-shadow: rgb(29, 28, 28) 5px 5px 20px;
+    
+}
+
+button{
+    border-radius: 5px;
+    margin-bottom: 3px;
+}*/
