@@ -1,6 +1,7 @@
 svg, rect{
     position: absolute ;
     fill: transparent;
+    left:0px;
     border-radius: 10px 10px 10px 10px;
     z-index: -100;
     
@@ -8,7 +9,7 @@ svg, rect{
 
 rect{
     stroke: #a18e99;
-    stroke-width: 6;
+    stroke-width: 10;
     stroke-dasharray: 100;
     animation: animate 3s linear infinite;
     
