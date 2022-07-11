@@ -1,0 +1,108 @@
+.carta{
+    height: 280px;
+    width: 180px;
+    text-align: center;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    backface-visibility: hidden;
+    -webkit-perspective: 700;
+}
+
+
+.card_sup{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    box-shadow: rgb(8, 8, 8) -5px -5px 20px;
+    border-radius: 5px;
+    
+}
+
+.imagen_prod{
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: rgb(8, 8, 8) 0px 3px 4px;
+    border: solid rgb(174, 168, 168) 4px;
+}
+
+
+.card_sup:hover{
+    transform: rotateY(180deg);
+}
+
+.card_sup p{
+    font-size: 15px;
+}
+.lado{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.frente{
+    background-image: radial-gradient(circle at 43.25% 48.19%, #eaffff 0, #e3faf8 16.67%, #d8e5e3 33.33%, #c9c9c9 50%, #b9aeb2 66.67%, #ab9ba2 83.33%, #a18e99 100%);
+}
+
+.atras{
+    --opacidad-negro: 0.3;
+    background-image:linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(/img/imagen-tela-colores.jpg);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+
+}
+
+.atras span{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*
+.atras ul{
+    text-align: center;
+    margin: auto;
+    margin-left: 10px;
+}
+.atras ul li{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    
+}*/
+
+.card_inf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-image: radial-gradient(circle at 50% -20.71%, #eaffff 0, #e3faf8 16.67%, #d8e5e3 33.33%, #c9c9c9 50%, #b9aeb2 66.67%, #ab9ba2 83.33%, #a18e99 100%);
+    /*border-radius:49% 51% 100% 0% / 100% 100% 0% 0% ;*/
+    height: 50px;
+    box-shadow: rgb(29, 28, 28) 5px 5px 20px;
+    border-radius: 5px;
+    
+}
+
+button{
+    border-radius: 20px;
+    border: solid rgb(174, 168, 168) 4px;
+    box-shadow: rgb(8, 8, 8) 0px 3px 4px;
+}
+
+button span{
+    font-size: 20px;
+    border-radius: 20px;
+}
