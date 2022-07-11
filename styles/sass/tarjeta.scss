@@ -51,7 +51,7 @@
 
 .atras{
     --opacidad-negro: 0.3;
-    background-image:linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(/img/imagen-tela-colores.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(../../img/imagen-tela-colores.jpg);
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;

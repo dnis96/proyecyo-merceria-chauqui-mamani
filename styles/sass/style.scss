@@ -7,7 +7,7 @@
 
 body{
     --opacidad-negro: 0.5;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(/img/textura-tela-blanca-fondo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(../../img/textura-tela-blanca-fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
