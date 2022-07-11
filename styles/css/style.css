@@ -54,6 +54,22 @@ aside .nav-item a {
   color: rgb(195, 135, 61);
 }
 
+.tarj p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 svg, rect {
   position: absolute;
   fill: transparent;
@@ -96,6 +112,18 @@ rect {
   border-radius: 5px;
 }
 
+.card-sup-1 {
+  transition: all 1s ease-in-out;
+  animation-duration: 3s;
+  animation-name: anime;
+  animation-iteration-count: 2;
+}
+
+@keyframes anime {
+  from {
+    transform: rotateY(180deg);
+  }
+}
 .imagen_prod {
   width: 150px;
   border-radius: 5px;
