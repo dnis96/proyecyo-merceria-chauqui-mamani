@@ -55,19 +55,20 @@ aside .nav-item a {
 }
 
 .tarj p {
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: slidein;
   animation-iteration-count: 1;
+  overflow: hidden;
 }
 
 @keyframes slidein {
-  from {
+  0% {
     margin-left: 100%;
-    width: 300%;
+    width: 1000px;
+    height: 40px;
   }
   to {
     margin-left: 0%;
-    width: 100%;
   }
 }
 svg, rect {
@@ -283,6 +284,14 @@ h2 {
 
 .card-img-bottom {
   margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-attachment: scroll;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
