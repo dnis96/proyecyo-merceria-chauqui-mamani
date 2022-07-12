@@ -21,7 +21,6 @@ aside .navbar-expand-md .navbar-nav {
 }
 
 aside .nav-item {
-  /*border: solid 2px;*/
   width: 100%;
   height: 100%;
   position: relative;
@@ -169,28 +168,12 @@ rect {
   margin-bottom: 10px;
 }
 
-/*
-.atras ul{
-    text-align: center;
-    margin: auto;
-    margin-left: 10px;
-}
-.atras ul li{
-    text-decoration: none;
-    list-style: none;
-    display: block;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 25px;
-
-}*/
 .card_inf {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
   background-image: radial-gradient(circle at 50% -20.71%, #eaffff 0, #e3faf8 16.67%, #d8e5e3 33.33%, #c9c9c9 50%, #b9aeb2 66.67%, #ab9ba2 83.33%, #a18e99 100%);
-  /*border-radius:49% 51% 100% 0% / 100% 100% 0% 0% ;*/
   height: 50px;
   box-shadow: rgb(29, 28, 28) 5px 5px 20px;
   border-radius: 5px;
@@ -214,7 +197,6 @@ body {
   background-size: cover;
   background-blend-mode: darken;
   background-attachment: fixed;
-  /*background-image: radial-gradient(circle at 70.73% 50%, #ffb9b2 0, #ffb0b4 8.33%, #ffa7b7 16.67%, #ff9eba 25%, #ff94bd 33.33%, #ff89c1 41.67%, #f57fc5 50%, #e776ca 58.33%, #d670d0 66.67%, #c36cd7 75%, #ad6bdd 83.33%, #936ce4 91.67%, #736dea 100%);*/
 }
 
 .logoM {
@@ -285,15 +267,5 @@ h2 {
 .card-img-bottom {
   margin-bottom: 10px;
 }
-
-/*
-@media (max-width: 1024px) { 
-    body { 
-        background-attachment: scroll; 
-        background-size: contain;
-        background-repeat: no-repeat;
-
-    } 
-}*/
 
 /*# sourceMappingURL=style.css.map */
