@@ -91,3 +91,25 @@ h2{
 .card-img-bottom{
     margin-bottom: 10px;
 }
+
+.wave{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.imag_nov{
+    width: 40%;
+    height: 140px;
+}
+
+.accordion-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-fluid{
+    text-align: center;
+}
