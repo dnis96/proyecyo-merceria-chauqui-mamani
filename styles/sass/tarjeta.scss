@@ -124,7 +124,7 @@ button span{
     }
     .card_sup{
         position: relative;
-        
+        border: double 5px;
     }
     .frente{
         display: flex;
@@ -142,7 +142,7 @@ button span{
         background-image: radial-gradient(circle at 43.25% 48.19%, #eaffff 0, #e3faf8 16.67%, #d8e5e3 33.33%, #c9c9c9 50%, #b9aeb2 66.67%, #ab9ba2 83.33%, #a18e99 100%);
         span{
             color: #463838;
-            border-radius: 2px;
+            border-radius: 10px;
             border: solid 2px;
         }
     }

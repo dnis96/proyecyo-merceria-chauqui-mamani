@@ -52,7 +52,8 @@ h2{
     font-size: 50px;
     font-weight: bold;
     position: relative;
-    
+    text-align: center;
+    text-decoration: underline 8px;
 }
 
 .texto{
@@ -100,8 +101,9 @@ h2{
 }
 
 .imag_nov{
-    width: 40%;
+    width: 30%;
     height: 140px;
+    border: double 5px;
 }
 
 .accordion-body{
@@ -113,3 +115,4 @@ h2{
 .container-fluid{
     text-align: center;
 }
+
