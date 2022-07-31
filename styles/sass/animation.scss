@@ -1,3 +1,5 @@
+@use './colores';
+
 svg, rect{
     position: absolute ;
     fill: transparent;
@@ -8,7 +10,7 @@ svg, rect{
 }
 
 rect{
-    stroke: #a18e99;
+    stroke: colores.$color-6;
     stroke-width: 10;
     stroke-dasharray: 100;
     animation: animate 3s linear infinite;

@@ -3,6 +3,8 @@
 @use './bootstrap.scss';
 @use './animation.scss';
 @use './tarjeta.scss';
+@use './colores';
+@use './flexs';
 
 
 body{
@@ -50,25 +52,24 @@ h2{
 }
 
 .texto{
-    text-shadow: rgb(150, 150, 150) 5px 5px 5px;
+    text-shadow: (colores.$b-color) 5px 5px 5px;
     animation: mianimacion 4s ease-in-out 0s infinite normal none;
 }
 
 @keyframes mianimacion { 
     0% { 
-    color: #FFFFFF; 
+    color: colores.$color-W; 
     } 
     50% { 
-    color: #FF0000; 
+    color: colores.$color-Bv; 
     } 
     100% { 
-    color: #4616e5; 
+    color: colores.$color-1; 
     } 
 } 
 
 .main_p{
-    display: flex;
-    flex-direction: row;
+    @include flexs.flex_R;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -101,8 +102,7 @@ h2{
 }
 
 .accordion-body{
-    display: flex;
-    flex-direction: row;
+    @include flexs.flex_R;
     justify-content: space-between;
 }
 

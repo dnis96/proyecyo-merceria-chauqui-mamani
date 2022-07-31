@@ -1,3 +1,4 @@
+@use './colores';
 
 aside .navbar .container-fluid, aside
 .navbar-expand-md .navbar-collapse, aside
@@ -18,13 +19,13 @@ aside .nav-item{
     width: 100%;
     height: 100%;
     position: relative;
-    box-shadow: rgb(255, 148, 148) 5px 5px 20px;
+    box-shadow: colores.$color-7 5px 5px 20px;
     border-radius: 10px;
-    color: rgb(195, 135, 61);
+    color: colores.$color-8;
     
 }
 aside .nav-item a{
-    color: white;
+    color: colores.$color-W;
 }
 
 .carrousel{
@@ -42,9 +43,9 @@ aside .nav-item a{
 .tarj{
     position: relative;
     z-index: -100;
-    box-shadow: rgb(255, 148, 148) -10px -10px 10px;
+    box-shadow: colores.$color-7 -10px -10px 10px;
     border-radius: 10px;
-    color: rgb(195, 135, 61);
+    color: colores.$color-8;
     align-items: center;
 }
 

@@ -1,10 +1,12 @@
+@use './colores';
+@use './flexs';
+
 .carta{
     height: 280px;
     width: 200px;
     text-align: center;
     margin: 6px;
-    display: flex;
-    flex-direction: column;
+    @include flexs.flex_C;
     justify-content: space-around;
     backface-visibility: hidden;
     -webkit-perspective: 700;
@@ -17,7 +19,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
-    box-shadow: rgb(8, 8, 8) -5px -5px 20px;
+    box-shadow: colores.$color-2 -5px -5px 20px;
     border-radius: 5px;
     
 }
@@ -39,8 +41,8 @@
 .imagen_prod{
     width: 150px;
     border-radius: 5px;
-    box-shadow: rgb(8, 8, 8) 0px 3px 4px;
-    border: solid rgb(174, 168, 168) 4px;
+    box-shadow: colores.$color-2 0px 3px 4px;
+    border: solid colores.$color-3 4px;
 }
 
 
@@ -68,15 +70,14 @@
     --opacidad-negro: 0.3;
     background-image:linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(../../img/imagen-tela-colores.jpg);
     transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
+    @include flexs.flex_C;
     
     justify-content: center;
 
 }
 
 .atras span{
-    color: #ffffff;
+    color: colores.$color-W;
     font-weight: bold;
     font-size: 20px;
     margin-top: 10px;
@@ -85,21 +86,20 @@
 
 
 .card_inf{
-    display: flex;
-    flex-direction: row;
+    @include flexs.flex_R;
     justify-content: space-around;
     align-items: flex-end;
     background-image: radial-gradient(circle at 50% -20.71%, #eaffff 0, #e3faf8 16.67%, #d8e5e3 33.33%, #c9c9c9 50%, #b9aeb2 66.67%, #ab9ba2 83.33%, #a18e99 100%);
     height: 50px;
-    box-shadow: rgb(29, 28, 28) 5px 5px 20px;
+    box-shadow: colores.$color-4 5px 5px 20px;
     border-radius: 5px;
     
 }
 
 button{
     border-radius: 20px;
-    border: solid rgb(174, 168, 168) 4px;
-    box-shadow: rgb(8, 8, 8) 0px 3px 4px;
+    border: solid colores.$color-3 4px;
+    box-shadow: colores.$color-2 0px 3px 4px;
 }
 
 button span{
@@ -112,8 +112,7 @@ button span{
     .carta{
         height: 280px;
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        @include flexs.flex_C;
         justify-content: space-around;
     }
     
@@ -127,8 +126,7 @@ button span{
         border: double 5px;
     }
     .frente{
-        display: flex;
-        flex-direction: row;
+        @include flexs.flex_R;
         align-items: center;    
     }
     .card_sup:hover{
@@ -141,7 +139,7 @@ button span{
         align-items: center;
         background-image: radial-gradient(circle at 43.25% 48.19%, #eaffff 0, #e3faf8 16.67%, #d8e5e3 33.33%, #c9c9c9 50%, #b9aeb2 66.67%, #ab9ba2 83.33%, #a18e99 100%);
         span{
-            color: #463838;
+            color: colores.$color-5;
             border-radius: 10px;
             border: solid 2px;
         }

@@ -30,7 +30,7 @@ aside .nav-item {
 }
 
 aside .nav-item a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .carrousel {
@@ -166,7 +166,7 @@ rect {
 }
 
 .atras span {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
@@ -292,7 +292,7 @@ h2 {
 
 @keyframes mianimacion {
   0% {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
   }
   50% {
     color: #FF0000;
